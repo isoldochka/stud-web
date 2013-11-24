@@ -51,7 +51,9 @@
          <tr>
           <td valign="top">
             {{content}}
+            {% if page.hide_marina != true %}
             {% include marina.html %}
+            {% endif %}
           </td>
           </tr>
         </table>
