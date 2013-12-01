@@ -1,0 +1,8 @@
+#!/bin/bash
+cd portfolio
+for file in *.tex
+do
+  pdflatex $file
+done
+rm *.aux
+rm *.log
